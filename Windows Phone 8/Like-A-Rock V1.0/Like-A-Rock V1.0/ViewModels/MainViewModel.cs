@@ -108,12 +108,9 @@ namespace Like_A_Rock_V1._0.ViewModels
         void webClient_SolList(object sender, DownloadStringCompletedEventArgs e)
         {
             CollectionOfSols Objectified = JsonConvert.DeserializeObject<CollectionOfSols>(e.Result) as CollectionOfSols;
-            SolImagesList = new List<SolImages>(Objectified.sols.Count); 
-            foreach (Sol s in Objectified.sols)
-            {
-                getSolImages(s.catalog_url);
-                asyncCounter++; 
-            }
+            SolImagesList = new List<SolImages>(Objectified.sols.Count);
+
+            getSolImages(Objectified.sols[Objectified.sols.Count].catalog_url); 
         }
         private void getSolImages(string str)
         {
@@ -126,10 +123,7 @@ namespace Like_A_Rock_V1._0.ViewModels
             asyncCounter--; 
             SolImages Objectified = JsonConvert.DeserializeObject<SolImages>(e.Result) as SolImages;
             SolImagesList.Add(Objectified);
-            if (asyncCounter == 0)
-            {
-                ;
-            }
+
         }
     }
 }
