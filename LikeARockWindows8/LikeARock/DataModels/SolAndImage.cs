@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace LikeARock
 {
-    class SolImages
+    class SolAndImage
     {
-        public string Most_recent { get; set; }
-        public int Sol { get; set; }
+        public MarsImage SelectedImage { get; set; }
+        public int Sol { get; set; } 
         public List<MarsImage> Images { get; set; }
     }
 }

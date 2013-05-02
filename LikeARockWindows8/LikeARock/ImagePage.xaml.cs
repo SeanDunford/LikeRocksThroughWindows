@@ -1,5 +1,4 @@
-﻿using LikeARock.DataModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,7 +21,8 @@ namespace LikeARock
     /// </summary>
     public sealed partial class ImagePage : Page
     {
-        private MarsImage mSelectedImage = new MarsImage();
+        private SolAndImage mCurrentContext = new SolAndImage();
+        private int mCurrentIndex;
 
         public ImagePage()
         {
@@ -36,29 +36,40 @@ namespace LikeARock
         /// property is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            var lSelectedImage = e.Parameter;
-            mSelectedImage = (MarsImage)lSelectedImage;
-            SelectedImageDisplay.DataContext = lSelectedImage;
-            uSolTxt.Text = mSelectedImage.Sol.ToString();
-            uTeamTxt.Text = mSelectedImage.Contributor;
-            uCameraTypeTxt.Text = mSelectedImage.CameraModelType;
-            uInstmntTxt.Text = mSelectedImage.Instrument;
-            uUtcTxt.Text = mSelectedImage.Utc;
+            var lCurrentContext = e.Parameter;
+            mCurrentContext = (SolAndImage)lCurrentContext;
+            BindObjects();
+            mCurrentIndex = mCurrentContext.Images.IndexOf(mCurrentContext.SelectedImage);
+        }
+
+        private void BindObjects()
+        {
+            uSelectedImageDisplay.DataContext = mCurrentContext.SelectedImage;
+            uSolTxt.Text = mCurrentContext.Sol.ToString();
+            uTeamTxt.Text = mCurrentContext.SelectedImage.Contributor;
+            uCameraTypeTxt.Text = mCurrentContext.SelectedImage.CameraModelType;
+            uInstmntTxt.Text = mCurrentContext.SelectedImage.Instrument;
+            uUtcTxt.Text = mCurrentContext.SelectedImage.Utc;
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(MainPage), mCurrentContext);
         }
 
         private void btnPrevImage_Click(object sender, RoutedEventArgs e)
         {
-
+            if (mCurrentIndex != 0)
+            {
+                mCurrentIndex--;
+                mCurrentContext.SelectedImage = mCurrentContext.Images[mCurrentIndex];
+                BindObjects();
+            }
         }
 
         private void btnNextImage_Click(object sender, RoutedEventArgs e)
         {
-
+            //mCurrentIndex < mCurrentContext.Images.Count - 1
         }
     }
 }

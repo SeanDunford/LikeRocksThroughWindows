@@ -22,12 +22,6 @@
     <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\bin\Debug\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\bin\Debug\Newtonsoft.Json.pdb">
-      <PackagePath>Newtonsoft.Json.pdb</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\bin\Debug\Newtonsoft.Json.xml">
-      <PackagePath>Newtonsoft.Json.xml</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>

@@ -11,7 +11,7 @@
         <Button x:ConnectionId='1' Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="151,64,0,0" VerticalAlignment="Top" Width="150"                       />
         <Button x:ConnectionId='2' Name="btnNextImage" Content="Next Image" HorizontalAlignment="Left" Margin="574,64,0,0" VerticalAlignment="Top" Width="150"                            />
         <Button x:ConnectionId='3' Name="btnPrevImage" Content="Previous Image" HorizontalAlignment="Left" Margin="360,64,0,0" VerticalAlignment="Top" Width="150"                            />
-        <Image Name="SelectedImageDisplay" Source="{Binding UrlList}" HorizontalAlignment="Left" Height="543" Margin="83,176,0,0" VerticalAlignment="Top" Width="891"/>
+        <Image Name="uSelectedImageDisplay" Source="{Binding UrlList}" HorizontalAlignment="Left" Height="543" Margin="83,176,0,0" VerticalAlignment="Top" Width="891"/>
         <TextBlock x:Name="uSolLbl" FontSize="20" HorizontalAlignment="Left" Margin="993,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="338" Text="Sol Day Picture Was Taken:"/>
         <TextBlock Name="uUtcLbl" FontSize="20" HorizontalAlignment="Left" Margin="993,278,0,0" TextWrapping="Wrap" Text="Universal Time Picture Was Taken:" VerticalAlignment="Top" Height="40" Width="338"/>
         <TextBlock Name="uInstmntLbl" FontSize="20" HorizontalAlignment="Left" Margin="993,383,0,0" TextWrapping="Wrap" Text="Intstrument Picture Was Taken From:" VerticalAlignment="Top" Height="46" Width="338"/>

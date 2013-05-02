@@ -30,6 +30,7 @@ namespace LikeARock
         static string mNASAURL = "http://mars.jpl.nasa.gov/msl-raw-images/image/image_manifest.json";
         private Manifest mManifest;
         private SolImages mCurrentSol;
+        private SolAndImage mCurrentContext;
 
         public MainPage()
         {
@@ -43,7 +44,13 @@ namespace LikeARock
         /// property is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            var lCurrentContext = e.Parameter;
+            if (lCurrentContext != "")
+            {
+                mCurrentContext = (SolAndImage)lCurrentContext;
+            }
             GetJSON(mNASAURL);
+
         }
         /*I only want to serialize the SolImages Object when a specific Sol Day is requested to be viewed. 
          * 
@@ -57,18 +64,33 @@ namespace LikeARock
             var lSols = lManifest["sols"] as JArray;
             SolDaySelect.ItemsSource = mManifest.Sols;
             SolDaySelect.DisplayMemberPath = "Sol";
-            //SolDaySelect.SelectedValuePath = "Sol";
-            //uJsonResponse.Text = lResponse;
+            if (mCurrentContext != null)
+            {
+                SolDay lSolDay = new SolDay();
+                foreach (SolDay lSol in mManifest.Sols)
+                {
+                    if (lSol.Sol == mCurrentContext.Sol)
+                    {
+                        lSolDay = lSol;
+                    }
+
+                }
+                if (lSolDay.Catalog_url != "")
+                {
+                    string lCatalogUrl = lSolDay.Catalog_url;
+                    BindSolDay(lCatalogUrl);
+                }
+            }
             
         }
 
-        private async void GetSolDay(string aCatalogURL)
+        private async void BindSolDay(string aCatalogURL)
         {
             var client = new HttpClient();
             var lResponse = await client.GetStringAsync(aCatalogURL);
             var lSolDay = JObject.Parse(lResponse);
             mCurrentSol = lSolDay.ToObject<SolImages>();
-            SolGridView.DataContext = mCurrentSol.images;
+            SolGridView.DataContext = mCurrentSol.Images;
         }
 
         private Manifest Deserialize(Stream aResponse)
@@ -80,19 +102,23 @@ namespace LikeARock
         {
             int lSelectedSol = (int)SolDaySelect.SelectedIndex;
             string lCatalogUrl = mManifest.Sols[lSelectedSol].Catalog_url;
-            GetSolDay(lCatalogUrl);
+            BindSolDay(lCatalogUrl);
         }
 
         private void SolGridView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var lSelectedImage = SolGridView.SelectedItem;
-            this.Frame.Navigate(typeof(ImagePage), lSelectedImage);
+            SolAndImage lCurrentContext = new SolAndImage();
+            lCurrentContext.SelectedImage = (MarsImage)lSelectedImage;
+            lCurrentContext.Images = mCurrentSol.Images;
+            lCurrentContext.Sol = mCurrentSol.Sol;
+            this.Frame.Navigate(typeof(ImagePage), lCurrentContext);
         }
 
         private void btnLatestSol_Click(object sender, RoutedEventArgs e)
         {
             int lCount = mManifest.Sols.Count;
-            GetSolDay(mManifest.Sols[lCount-1].Catalog_url);
+            BindSolDay(mManifest.Sols[lCount-1].Catalog_url);
         }
     }
 

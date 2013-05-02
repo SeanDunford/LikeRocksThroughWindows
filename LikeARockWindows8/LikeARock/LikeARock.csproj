@@ -104,6 +104,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="DataModels\MarsImage.cs" />
+    <Compile Include="DataModels\SolAndImage.cs" />
     <Compile Include="DataModels\SolImages.cs" />
     <Compile Include="ImagePage.xaml.cs">
       <DependentUpon>ImagePage.xaml</DependentUpon>
