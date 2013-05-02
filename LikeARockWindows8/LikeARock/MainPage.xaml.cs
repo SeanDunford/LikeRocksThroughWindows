@@ -85,7 +85,8 @@ namespace LikeARock
 
         private void SolGridView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
+            var lSelectedImage = SolGridView.SelectedItem;
+            this.Frame.Navigate(typeof(ImagePage), lSelectedImage);
         }
 
         private void btnLatestSol_Click(object sender, RoutedEventArgs e)

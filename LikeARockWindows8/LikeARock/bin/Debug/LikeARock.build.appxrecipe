@@ -7,53 +7,56 @@
     <PackageArchitecture>neutral</PackageArchitecture>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Jordi\Documents\4JLabs\MicrosoftApps\LikeARock\LikeARock\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Jordi\Documents\4JLabs\MicrosoftApps\LikeARock\LikeARock\bin\Debug\LikeARock.exe">
+    <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\bin\Debug\LikeARock.exe">
       <PackagePath>LikeARock.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jordi\Documents\4JLabs\MicrosoftApps\LikeARock\LikeARock\bin\Debug\LikeARock.pdb">
+    <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\bin\Debug\LikeARock.pdb">
       <PackagePath>LikeARock.pdb</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jordi\Documents\4JLabs\Bin\Portable\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\bin\Debug\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jordi\Documents\4JLabs\Bin\Portable\Newtonsoft.Json.pdb">
+    <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\bin\Debug\Newtonsoft.Json.pdb">
       <PackagePath>Newtonsoft.Json.pdb</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jordi\Documents\4JLabs\Bin\Portable\Newtonsoft.Json.xml">
+    <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\bin\Debug\Newtonsoft.Json.xml">
       <PackagePath>Newtonsoft.Json.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jordi\Documents\4JLabs\MicrosoftApps\LikeARock\LikeARock\Assets\Logo.png">
+    <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jordi\Documents\4JLabs\MicrosoftApps\LikeARock\LikeARock\Assets\SmallLogo.png">
+    <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\Assets\SmallLogo.png">
       <PackagePath>Assets\SmallLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jordi\Documents\4JLabs\MicrosoftApps\LikeARock\LikeARock\Assets\SplashScreen.png">
+    <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jordi\Documents\4JLabs\MicrosoftApps\LikeARock\LikeARock\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jordi\Documents\4JLabs\MicrosoftApps\LikeARock\LikeARock\bin\Debug\App.xaml">
+    <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\bin\Debug\App.xaml">
       <PackagePath>App.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jordi\Documents\4JLabs\MicrosoftApps\LikeARock\LikeARock\bin\Debug\Common\StandardStyles.xaml">
+    <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\bin\Debug\Common\StandardStyles.xaml">
       <PackagePath>Common\StandardStyles.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jordi\Documents\4JLabs\MicrosoftApps\LikeARock\LikeARock\bin\Debug\MainPage.xaml">
+    <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\bin\Debug\ImagePage.xaml">
+      <PackagePath>ImagePage.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\bin\Debug\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Jordi\Documents\4JLabs\MicrosoftApps\LikeARock\LikeARock\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
