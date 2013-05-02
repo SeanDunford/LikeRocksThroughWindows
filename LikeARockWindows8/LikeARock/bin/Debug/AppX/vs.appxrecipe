@@ -22,11 +22,11 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\bin\Debug\LikeARock.exe">
       <PackagePath>LikeARock.exe</PackagePath>
-      <Modified>2013-05-02T20:27:46.932</Modified>
+      <Modified>2013-05-02T21:20:40.067</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\bin\Debug\LikeARock.pdb">
       <PackagePath>LikeARock.pdb</PackagePath>
-      <Modified>2013-05-02T20:27:46.909</Modified>
+      <Modified>2013-05-02T21:20:40.047</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\bin\Debug\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -70,11 +70,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\bin\Debug\ImagePage.xaml">
       <PackagePath>ImagePage.xaml</PackagePath>
-      <Modified>2013-05-02T20:26:44.406</Modified>
+      <Modified>2013-05-02T21:20:33.365</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\bin\Debug\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>
-      <Modified>2013-04-29T14:52:16.243</Modified>
+      <Modified>2013-05-02T21:02:27.156</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jordi\Documents\GitHub\LikeRocksThroughWindows\LikeARockWindows8\LikeARock\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>

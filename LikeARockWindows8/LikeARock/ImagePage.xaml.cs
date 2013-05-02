@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LikeARock.DataModels;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -21,6 +22,8 @@ namespace LikeARock
     /// </summary>
     public sealed partial class ImagePage : Page
     {
+        private MarsImage mSelectedImage = new MarsImage();
+
         public ImagePage()
         {
             this.InitializeComponent();
@@ -34,7 +37,28 @@ namespace LikeARock
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             var lSelectedImage = e.Parameter;
+            mSelectedImage = (MarsImage)lSelectedImage;
             SelectedImageDisplay.DataContext = lSelectedImage;
+            uSolTxt.Text = mSelectedImage.Sol.ToString();
+            uTeamTxt.Text = mSelectedImage.Contributor;
+            uCameraTypeTxt.Text = mSelectedImage.CameraModelType;
+            uInstmntTxt.Text = mSelectedImage.Instrument;
+            uUtcTxt.Text = mSelectedImage.Utc;
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnPrevImage_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnNextImage_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

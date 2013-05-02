@@ -8,7 +8,20 @@
     mc:Ignorable="d">
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-        <Image Name="SelectedImageDisplay" Source="{Binding UrlList}" HorizontalAlignment="Left" Height="613" Margin="116,73,0,0" VerticalAlignment="Top" Width="900"/>
+        <Button Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="151,64,0,0" VerticalAlignment="Top" Width="150" Click="btnBack_Click" />
+        <Button Name="btnNextImage" Content="Next Image" HorizontalAlignment="Left" Margin="574,64,0,0" VerticalAlignment="Top" Width="150" Click="btnNextImage_Click" />
+        <Button Name="btnPrevImage" Content="Previous Image" HorizontalAlignment="Left" Margin="360,64,0,0" VerticalAlignment="Top" Width="150" Click="btnPrevImage_Click" />
+        <Image Name="SelectedImageDisplay" Source="{Binding UrlList}" HorizontalAlignment="Left" Height="543" Margin="83,176,0,0" VerticalAlignment="Top" Width="891"/>
+        <TextBlock x:Name="uSolLbl" FontSize="20" HorizontalAlignment="Left" Margin="993,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="338" Text="Sol Day Picture Was Taken:"/>
+        <TextBlock Name="uUtcLbl" FontSize="20" HorizontalAlignment="Left" Margin="993,278,0,0" TextWrapping="Wrap" Text="Universal Time Picture Was Taken:" VerticalAlignment="Top" Height="40" Width="338"/>
+        <TextBlock Name="uInstmntLbl" FontSize="20" HorizontalAlignment="Left" Margin="993,383,0,0" TextWrapping="Wrap" Text="Intstrument Picture Was Taken From:" VerticalAlignment="Top" Height="46" Width="338"/>
+        <TextBlock Name="uCameraTypeLbl" FontSize="20" HorizontalAlignment="Left" Margin="993,479,0,0" TextWrapping="Wrap" Text="Camera Model Type:" VerticalAlignment="Top" Height="35" Width="338"/>
+        <TextBlock Name="uTeamLbl" FontSize="20" HorizontalAlignment="Left" Margin="993,572,0,0" TextWrapping="Wrap" Text="Contributing Team:" VerticalAlignment="Top" Height="35" Width="338"/>
+        <TextBlock Name="uSolTxt" FontSize="20" HorizontalAlignment="Left" Margin="1023,221,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="308"/>
+        <TextBlock Name="uUtcTxt" FontSize="20" HorizontalAlignment="Left" Margin="1023,323,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" RenderTransformOrigin="-0.005,0.534" Width="308"/>
+        <TextBlock Name="uInstmntTxt" FontSize="20" HorizontalAlignment="Left" Margin="1023,429,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="308"/>
+        <TextBlock Name="uCameraTypeTxt" FontSize="20" HorizontalAlignment="Left" Margin="1023,519,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="308"/>
+        <TextBlock Name="uTeamTxt" FontSize="20" HorizontalAlignment="Left" Margin="1023,607,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="308"/>
 
     </Grid>
 </Page>

@@ -11,7 +11,7 @@
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
         <Button Name="btnLatestSol" Content="Latest Sol" HorizontalAlignment="Left" Margin="31,176,0,0" VerticalAlignment="Top" Width="120" Click="btnLatestSol_Click" />
         <Button Content="Favorites" HorizontalAlignment="Left" Margin="31,242,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="31,311,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="About" HorizontalAlignment="Left" Margin="31,311,0,0" VerticalAlignment="Top" Width="120"/>
         <ComboBox ItemsSource="{Binding Mode=TwoWay}" SelectedValue="{Binding Sol}" Name="SolDaySelect" HorizontalAlignment="Left" Margin="31,414,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="SolDaySelect_SelectionChanged">
   
         </ComboBox>
