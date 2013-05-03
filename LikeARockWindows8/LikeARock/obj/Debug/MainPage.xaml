@@ -16,7 +16,7 @@
   
         </ComboBox>
         <TextBlock HorizontalAlignment="Left" Margin="48,394,0,0" TextWrapping="Wrap" Text="Select A Sol Day" VerticalAlignment="Top" Height="32" Width="120"/>
-        <GridView x:ConnectionId='3' ItemsSource="{Binding}" Name="SolGridView" HorizontalAlignment="Left" Margin="239,176,0,0" VerticalAlignment="Top" Width="1011" Height="460"                                                 >
+        <GridView x:ConnectionId='3' ItemsSource="{Binding}" Name="SolGridView" HorizontalAlignment="Left" Margin="239,215,0,0" VerticalAlignment="Top" Width="1011" Height="460"                                                 >
             <GridView.ItemTemplate>
                 <DataTemplate>
             <StackPanel Orientation="Vertical">
@@ -25,7 +25,10 @@
                 </DataTemplate>
             </GridView.ItemTemplate>
         </GridView>
-
+        <TextBlock TextAlignment="Center" FontSize="36" HorizontalAlignment="Left" Margin="63,43,0,0" TextWrapping="Wrap" Text="The 'Like A Rock' Curiosity Rover Image Feed" VerticalAlignment="Top" Height="45" Width="1241"/>
+        <TextBlock TextAlignment="Center" FontSize="20"  HorizontalAlignment="Left" Margin="63,105,0,0" TextWrapping="Wrap" Text="The term sol is used by planetary astronomers to refer to the duration of a solar day on Mars. An average Martian solar day, or 'sol', is 24 hours, 39 minutes, and 35.244 seconds." VerticalAlignment="Top" Height="44" Width="1241"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="212,179,0,0" TextWrapping="Wrap" Text="Currently Viewing Sol:" VerticalAlignment="Top" Height="26" Width="196"/>
+        <TextBlock Name="uSolTxt" FontSize="20" HorizontalAlignment="Left" Margin="413,179,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="196"/>
     </Grid>
 </Page>
 

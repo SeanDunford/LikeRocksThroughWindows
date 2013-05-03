@@ -81,6 +81,13 @@ namespace LikeARock
                     BindSolDay(lCatalogUrl);
                 }
             }
+            else
+            {
+                int lIndex = mManifest.Sols.Count;
+                lIndex--;
+                string lCatalogUrl = mManifest.Sols[lIndex].Catalog_url;
+                BindSolDay(lCatalogUrl);
+            }
             
         }
 
@@ -91,6 +98,7 @@ namespace LikeARock
             var lSolDay = JObject.Parse(lResponse);
             mCurrentSol = lSolDay.ToObject<SolImages>();
             SolGridView.DataContext = mCurrentSol.Images;
+            uSolTxt.Text = mCurrentSol.Sol.ToString();
         }
 
         private Manifest Deserialize(Stream aResponse)

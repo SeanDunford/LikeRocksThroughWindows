@@ -64,11 +64,29 @@ namespace LikeARock
                 mCurrentIndex--;
                 mCurrentContext.SelectedImage = mCurrentContext.Images[mCurrentIndex];
                 BindObjects();
+                uPrevTxt.Visibility = Visibility.Collapsed;
+                uNextTxt.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                uPrevTxt.Visibility = Visibility.Visible;
             }
         }
 
         private void btnNextImage_Click(object sender, RoutedEventArgs e)
         {
+            if (mCurrentIndex < mCurrentContext.Images.Count - 1)
+            {
+                mCurrentIndex++;
+                mCurrentContext.SelectedImage = mCurrentContext.Images[mCurrentIndex];
+                BindObjects();
+                uPrevTxt.Visibility = Visibility.Collapsed;
+                uNextTxt.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                uNextTxt.Visibility = Visibility.Visible;
+            }
             //mCurrentIndex < mCurrentContext.Images.Count - 1
         }
     }
