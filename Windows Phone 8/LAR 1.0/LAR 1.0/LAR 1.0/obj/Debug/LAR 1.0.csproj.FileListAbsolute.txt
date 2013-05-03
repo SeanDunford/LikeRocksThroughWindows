@@ -1,0 +1,18 @@
+Z:\GitProjects\LikeRocksThroughWindows\Windows Phone 8\LAR 1.0\LAR 1.0\LAR 1.0\Bin\Debug\Assets\ApplicationIcon.png
+Z:\GitProjects\LikeRocksThroughWindows\Windows Phone 8\LAR 1.0\LAR 1.0\LAR 1.0\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+Z:\GitProjects\LikeRocksThroughWindows\Windows Phone 8\LAR 1.0\LAR 1.0\LAR 1.0\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+Z:\GitProjects\LikeRocksThroughWindows\Windows Phone 8\LAR 1.0\LAR 1.0\LAR 1.0\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+Z:\GitProjects\LikeRocksThroughWindows\Windows Phone 8\LAR 1.0\LAR 1.0\LAR 1.0\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+Z:\GitProjects\LikeRocksThroughWindows\Windows Phone 8\LAR 1.0\LAR 1.0\LAR 1.0\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+Z:\GitProjects\LikeRocksThroughWindows\Windows Phone 8\LAR 1.0\LAR 1.0\LAR 1.0\Bin\Debug\LAR 1.0.dll
+Z:\GitProjects\LikeRocksThroughWindows\Windows Phone 8\LAR 1.0\LAR 1.0\LAR 1.0\Bin\Debug\LAR 1.0.pdb
+Z:\GitProjects\LikeRocksThroughWindows\Windows Phone 8\LAR 1.0\LAR 1.0\LAR 1.0\Bin\Debug\AppManifest.xaml
+Z:\GitProjects\LikeRocksThroughWindows\Windows Phone 8\LAR 1.0\LAR 1.0\LAR 1.0\Bin\Debug\LAR_1._0_Debug_AnyCPU.xap
+Z:\GitProjects\LikeRocksThroughWindows\Windows Phone 8\LAR 1.0\LAR 1.0\LAR 1.0\obj\Debug\App.g.cs
+Z:\GitProjects\LikeRocksThroughWindows\Windows Phone 8\LAR 1.0\LAR 1.0\LAR 1.0\obj\Debug\MainPage.g.cs
+Z:\GitProjects\LikeRocksThroughWindows\Windows Phone 8\LAR 1.0\LAR 1.0\LAR 1.0\obj\Debug\LAR 1.0.g.resources
+Z:\GitProjects\LikeRocksThroughWindows\Windows Phone 8\LAR 1.0\LAR 1.0\LAR 1.0\obj\Debug\LAR_1._0.Resources.AppResources.resources
+Z:\GitProjects\LikeRocksThroughWindows\Windows Phone 8\LAR 1.0\LAR 1.0\LAR 1.0\obj\Debug\LAR 1.0.csproj.GenerateResource.Cache
+Z:\GitProjects\LikeRocksThroughWindows\Windows Phone 8\LAR 1.0\LAR 1.0\LAR 1.0\obj\Debug\LAR 1.0.dll
+Z:\GitProjects\LikeRocksThroughWindows\Windows Phone 8\LAR 1.0\LAR 1.0\LAR 1.0\obj\Debug\LAR 1.0.pdb
+Z:\GitProjects\LikeRocksThroughWindows\Windows Phone 8\LAR 1.0\LAR 1.0\LAR 1.0\obj\Debug\XapCacheFile.xml
